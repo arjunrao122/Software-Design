@@ -1,0 +1,58 @@
+x canary test
+
+Uppercase converter tests:
+x abc to ABC
+x ABC to ABC
+x aBc to ABC
+x a1Z to A1Z
+x blank to blank
+
+Lowercase converter tests:
+x abc to abc
+x ABC to abc
+x aBc to abc
+x a1Z to a1z
+x blank to blank
+
+Multiplier tests:
+x abc to aabbcc
+x ABC to AABBCC 
+x aBc to aaBBcc 
+x a1Z to aa11ZZ 
+x blank to blank
+
+z_blocker tests:
+x abcz to abc
+x ABCZ to ABCZ 
+x zazBzc to aBc 
+x zz to blank
+x blank to blank
+
+Z_blocker tests:
+x abcZ to abc
+x ABCz to ABCz 
+x ZaZBZc to aBc 
+x ZZ to blank
+x blank to blank
+
+k_blocker tests:
+x abck to abc
+x ABCK to ABCK 
+x kakBkc to aBc 
+x kk to blank
+x blank to blank
+
+block_processor tests:
+input   output   blocks
+x aBc     aBc      no blocks
+x aBc     ABC      uppercase converter
+x aBc     abc      lowercase converter
+x aBc     AABBCC   uppercase multiplier
+x aBc     aabbcc   uppercase multiplier lowercase
+
+get_all_blocks test:
+xgetAllBlocks returns a non-empty set
+xgetAllBlocks returns a set that includes the uppercase converter
+xgetAllBlocks returns a set that includes the multiplier converter
+
+
