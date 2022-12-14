@@ -1,0 +1,40 @@
+x canary test
+x a dead cell with zero neighbors stays dead
+x a dead cell with one neighbors stays dead
+x a dead cell with two neighbors stays dead
+x a dead cell with five neighbors stays dead
+x a dead cell with eight neighbors stays dead
+x a dead cell with three neighbors comes to life
+x a live cell with one live neighbors dies
+x a live cell with four live neighbors dies
+x a live cell with eight live neighbors dies
+x a live cell with two live neighbors lives
+x a live cell with three live neighbors lives
+
+x given a live cell at position 2, 3, it generates eight signals for positions (1, 2), (1, 3), (1, 4), (2, 2), (2, 4), (3, 2), (3, 3), (3, 4)
+x given a live cell at position 3, 3, it generates eight signals for positions (2, 2), (2, 3), (2, 4), (3, 2), (3, 4), (4, 2), (4, 3), (4, 4)
+x given a live cell at positions 2, 4 it generates eight signals for positions (1, 3), (1, 4), (1, 5), (2, 3), (2, 5), (3, 3), (3, 4), (3, 5)
+x given a live cell at position 0, 0 it generates eight signals for positions (-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)
+
+x given no position, generateSignalsForMultiplePositions returns an empty list
+x given one position, generateSignalsForMultiplePositions returns eight positions
+x given two positions, generateSignalsForMultiplePositions returns sixteen positions
+x given three positions, generateSignalsForMultiplePositions returns twenty four positions
+
+x given no positions, countLiveNeighbors returns an empty Map
+x given one positions, countLiveNeighbors returns a Map with that position as key and value 1
+x given two of the same positions, countLiveNeighbors returns a Map with that positions as key and value 2
+x given three positions, first and the third being the same, countLiveNeighbors returns a Map with two keys. The value for one is 1 and the value for the other is 2
+
+x given Block, computeNextGeneration returns the same block
+x given Beehive, computeNextGeneration returns the same Beehive
+x given horizontal blinker, computeNextGeneration returns vertical blinker
+x given vertical blinker, computeNextGeneration returns horizontal blinker
+x given glider with one live cell on the top, computeNextGeneration returns proper result with that cell moving to the right
+
+x give an empty list, getBounds returns a tuple of (0, 0) and (100, 100)
+x given one point, getBounds returns a tuple of (pointX - 10, pointY - 10) and (pointX + 10, pointY + 10)
+x given two points, getBounds returns a tuple so that both the points given are within the bounds, with the outermost offset by 10 in each direction
+x given three points, getBounds returns a tuple so that points given are within the bounds, with the outermost offset by 10 in each direction
+x given four different points (note from the previous tests)
+
