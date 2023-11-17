@@ -1,0 +1,28 @@
+x canary test
+
+x factorial_by_imperative_iteration throws an exception 'Number should be Zero or greater' for -1
+x factorial_by_imperative_iteration returns 1 for 0
+x factorial_by_imperative_iteration returns 1 for 1
+x factorial_by_imperative_iteration returns 2 for 2
+x factorial_by_imperative_iteration returns 120 for 5
+x factorial_by_imperative_iteration returns 3628800 for 10
+x factorial_by_imperative_iteration returns 2432902008176640000 for 20
+x factorial_by_imperative_iteration returns 30414093201713378043612608166064768844377641568960512000000000000 for 50
+
+x factorial_by_simple_recursion throws an exception 'Number should be Zero or greater' for -1
+x factorial_by_simple_recursion returns 1 for 0
+x factorial_by_simple_recursion returns 1 for 1
+x factorial_by_simple_recursion returns 2 for 2
+x factorial_by_simple_recursion returns 120 for 5
+x factorial_by_simple_recursion returns 3628800 for 10
+x factorial_by_simple_recursion returns 2432902008176640000 for 20
+x factorial_by_simple_recursion returns 30414093201713378043612608166064768844377641568960512000000000000 for 50
+
+x factorial_by_functional_iteration throws an exception 'Number should be Zero or greater' for -1
+x factorial_by_functional_iteration returns 1 for 0
+x factorial_by_functional_iteration returns 1 for 1
+x factorial_by_functional_iteration returns 2 for 2
+x factorial_by_functional_iteration returns 120 for 5
+x factorial_by_functional_iteration returns 3628800 for 10
+x factorial_by_functional_iteration returns 2432902008176640000 for 20
+x factorial_by_functional_iteration returns 30414093201713378043612608166064768844377641568960512000000000000 for 50

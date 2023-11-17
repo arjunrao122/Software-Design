@@ -1,0 +1,13 @@
+x canary test
+
+x get_user_input returns 1 for 1
+x get_user_input returns 2 for 2
+x get_user_input returns 3 for 3
+x get_user_input returns 10 for 10
+x get_user_input returns 100 for 100
+
+x compute_prime_numbers returns [2] for 1
+x compute_prime_numbers returns [2, 3] for 2
+x compute_prime_numbers returns [2, 3, 5] for 3
+x compute_prime_numbers returns [2, 3, 5, 7, 11, 13, 17, 19, 23, 29] for 10
+
